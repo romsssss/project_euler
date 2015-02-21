@@ -13,7 +13,7 @@ solve() ->
   lists:max(palindromes()).
 
 is_integer_palindrome(X) ->
-  erlang:integer_to_list(X) =:= lists:reverse(erlang:integer_to_list(X)).
+  integer_to_list(X) =:= lists:reverse(integer_to_list(X)).
 
 palindromes() ->
   palindromes(0, 0, []).
